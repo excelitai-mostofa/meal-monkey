@@ -3,6 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:meal_monkey/src/pages/pages.dart';
 import 'package:meal_monkey/styles/styles.dart';
 
+import 'constants.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -49,9 +51,9 @@ class MyApp extends StatelessWidget {
 
 
         routes: {
-          "/" : (context)=> const Splash_srcn(),
-          "/intro" : (context)=> Intro_page(),
-          "/starter" : (context)=> StarterPage(),
+          kRouteRoot : (context)=> const Splash_srcn(),
+          kRouteIntro : (context)=> Intro_page(),
+          kRouteStarter : (context)=> StarterPage(),
         },
       ),
     );

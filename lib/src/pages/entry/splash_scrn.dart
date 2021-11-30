@@ -15,7 +15,7 @@ class _Splash_srcnState extends State<Splash_srcn> {
   void initState(){
     super.initState();
     Timer(const Duration(seconds: 3), (){
-      Navigator.pushReplacementNamed(context, '/intro');
+      Navigator.pushReplacementNamed(context, kRouteIntro);
     });
   }
 

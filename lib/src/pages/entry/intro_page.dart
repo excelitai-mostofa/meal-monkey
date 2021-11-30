@@ -94,7 +94,7 @@ class _Intro_pageState extends State<Intro_page> {
             child: ElevatedButton(
                 onPressed: (){
                   if((_activeIndex + 1)>= _data.length) {
-                    Navigator.pushReplacementNamed(context, '/starter');
+                    Navigator.pushReplacementNamed(context, kRouteStarter);
                     return;
                   };
                   _pageController.animateToPage(
