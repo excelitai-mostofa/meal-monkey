@@ -103,14 +103,7 @@ class _Intro_pageState extends State<Intro_page> {
                       curve: Curves.easeIn
                   );
                 },
-                style: ElevatedButton.styleFrom(
-                  primary: mainColor,
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(40),
-                  ),
-                    padding: EdgeInsets.all(15),
-                    minimumSize: const Size(double.infinity, 50)
-                ),
+
 
                 child: Text('Next')
             ),

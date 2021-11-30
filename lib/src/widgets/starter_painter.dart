@@ -8,12 +8,12 @@ class StarterPainter extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomPaint(
       painter: _StarterCustomPainter(),
-
-      child: Image.asset('assets\starter_background2.png',
-        alignment: Alignment.topCenter,
-        fit: BoxFit.contain,
-        width: MediaQuery.of(context).size.width,
-      ),
+      //
+      // child: Image.asset('assets\starter_background2.png',
+      //   alignment: Alignment.topCenter,
+      //   fit: BoxFit.contain,
+      //   width: MediaQuery.of(context).size.width,
+      // ),
     );
   }
 }
