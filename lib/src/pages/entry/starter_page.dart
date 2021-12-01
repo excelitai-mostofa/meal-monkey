@@ -32,7 +32,7 @@ class _StarterPageState extends State<StarterPage> {
               children: [
                 ElevatedButton(
                     onPressed: (){
-
+                      Navigator.pushReplacementNamed(context, kRouteLogin);
                     },
 
                     child: Text('Login')

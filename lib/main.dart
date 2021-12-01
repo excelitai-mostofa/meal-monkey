@@ -54,6 +54,7 @@ class MyApp extends StatelessWidget {
           kRouteRoot : (context)=> const Splash_srcn(),
           kRouteIntro : (context)=> Intro_page(),
           kRouteStarter : (context)=> StarterPage(),
+          kRouteLogin : (context)=> LoginPage(),
         },
       ),
     );
