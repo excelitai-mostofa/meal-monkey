@@ -42,6 +42,20 @@ class MyApp extends StatelessWidget {
                 padding: EdgeInsets.all(15),
                 minimumSize: const Size(double.infinity, 50)
             ),
+          ),
+
+
+          inputDecorationTheme: InputDecorationTheme(
+            border: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(40),
+              borderSide: BorderSide.none,
+            ),
+            floatingLabelStyle: TextStyle(
+              color: secondaryFontColor
+            ),
+            contentPadding: EdgeInsets.symmetric(
+              vertical: 4, horizontal: 28,
+            )
           )
 
 
