@@ -6,13 +6,50 @@ class EnterEmailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Text("Reset password"),
-          Text("Please enter your email to receive a link to create a new password via email"),
 
-        ],
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        leading: BackButton(
+          color: Colors.black,
+        ),
       ),
+
+      body: Container(
+        padding: EdgeInsets.symmetric(horizontal: horizontalPadding),
+        height: MediaQuery.of(context).size.height,
+        child: Column(
+          children: [
+
+            LoginRegisterHeader(
+              centerText: true,
+                title: 'Reset Password',
+                subTitle: 'Please check your email to receive \nOtp to create new password via Email'
+            ),
+
+            TextFormField(
+              style: TextStyle(color: primaryFontColor),
+              obscureText: true,
+              decoration: InputDecoration(
+                labelText: 'Email',
+                isCollapsed: true,
+              ),
+            ),
+
+            SizedBox(height: verticalPadding * 2,),
+
+
+
+            ElevatedButton(
+                onPressed: (){
+                  Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=> EnterOtpPage()));
+                },
+                child: Text("Send")
+            ),
+
+          ],
+        ),
+      )
     );
   }
 }

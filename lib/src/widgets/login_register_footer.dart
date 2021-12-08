@@ -4,12 +4,12 @@ class LoginRegisterFooter extends StatelessWidget {
 
   final String question;
   final String actionText;
-  final String actionRoute;
+  final GestureTapCallback action;
   const LoginRegisterFooter(
       {
         required this.question,
         required this.actionText,
-        required this.actionRoute,
+        required this.action,
         Key? key}) : super(key: key);
 
   @override
@@ -28,9 +28,7 @@ class LoginRegisterFooter extends StatelessWidget {
                         color: Theme.of(context).primaryColor,
                         fontWeight: FontWeight.bold,
                       ),
-                      recognizer: TapGestureRecognizer()..onTap =(){
-                        Navigator.pushReplacementNamed(context, actionRoute);
-                      }
+                      recognizer: TapGestureRecognizer()..onTap = action
                   ),
                 ]
             )
